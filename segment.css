@@ -1,0 +1,168 @@
+
+/* ------------------------------------HERO BANNER-------------------------------------- */
+.hero-section h1  {
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .hero-section h1  {
+    color: #fff;
+  }
+}
+
+/* ------------------------------------HERO BANNER END---------------------------------------------------- */
+
+.tab-list {
+  margin-top: 30px;
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    align-items: center;
+    justify-content: left;
+    align-items: center;
+    padding-right: 30px;
+
+
+  }
+
+
+  .tab-list a {
+    padding:10px 20px;
+    border: 1px solid #ffffff;
+    margin-right: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 25px;
+    color: #000;
+
+
+  }
+
+  .tab-list a:hover {
+
+    background-color: #ff7b00;
+    color: #ffffff;
+  }
+
+  .tab-list a.active {
+    background-color: #ff7b00;
+    color: white;
+    border-color: #ff7b00;
+  }
+/* -----------------------------building--------------------------------------------- */
+h1 {
+    color: #001168;
+}
+.feature-details h2{
+  color: #001168;
+
+}
+.container{
+  padding-left: 0%;
+}
+
+  .features-container {
+    display: flex;
+    width: 100%; /* Full width of its parent */
+    align-items: flex-start; /* Align items at the start vertically */
+  }
+
+  .feature-image, .feature-details {
+    flex: 1; /* Each takes half of the container */
+  }
+
+  .feature-image img {
+    width: 100%; /* Full width of its container */
+    height: 460px; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional rounded corners */
+  }
+
+  .feature-details {
+    padding: 0 20px; /* Padding inside the details for spacing */
+  }
+
+  .feature-item {
+    margin-bottom: 20px; /* Space between each feature */
+    padding: 15px;
+  }
+  .feature-item:hover{
+    background-color: #f0f0f0;
+    padding: 15px;
+
+  }
+
+  @media (max-width: 768px) {
+    .features-container {
+      flex-direction: column; /* Stack vertically on smaller screens */
+    }
+
+    .feature-image img, .feature-details {
+      width: 100%; /* Full width on smaller screens */
+    }
+  }
+/* --------------------------------industry------------------------------------------------ */
+.containerimage{
+  display: flex;
+  justify-content: space-between;
+}
+
+.industry-header h1 {
+    color: #001168; /* Dark grey color for the heading */
+    text-align: left; /* Center aligns the heading */
+}
+
+.industry-header p {
+    color: #001168; /* Lighter grey color for the paragraphs */
+    text-align: left; /* Center aligns the paragraphs */
+    margin-top: 5px; /* Adds a small space between the heading and paragraph */
+}
+
+
+
+.image-container {
+    width: 49%; /* Adjust the width as necessary */
+    text-align: left;
+}
+
+
+.image-container img {
+    width: 100%;
+    height: 450px;
+    padding: 0%;
+
+}
+
+.image-container p {
+    margin-top: 10px;
+}
+
+
+.containerimage-mobility{
+  display: flex;
+  justify-content: flex-start;
+}
+.containerimage-mobility img{
+  display: flex;
+  width: 220%;
+  align-items: center;
+}
+.containerimage-mobility p{
+  display: flex;
+  width: 220%;
+  align-items: center;
+}
+
+
+/* ----------industry---------------------    */
+
+
+
+
+
+
+
+
+
+
+
+

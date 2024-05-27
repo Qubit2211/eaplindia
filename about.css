@@ -1,0 +1,551 @@
+
+body {
+  margin: 0;
+  line-height: normal;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+
+
+/* ----------------hero section-------------------- */
+.hero-section h1{
+  font-size: 45px;
+  /* font-weight: 900; */
+  text-align: left;
+  }
+  @media (max-width: 768px) {
+  .hero-section h1  {
+  color: #fff;
+  font-size: 35px;
+  }
+  }
+
+/* ----------------------------------------- */
+.who-we-are-section {
+    background-color: #fff; /* Change this to match your desired background color */
+    width: 100%;
+    padding: 20px 0; /* Adjust the padding to fit your design */
+    text-align: left;
+    
+}
+
+.who-we-are-title {
+    color: #003366; /* Adjust title color as needed */
+    font-size: 36px; /* Adjust font size as needed */
+    margin-bottom: 10px; /* Space between the title and the content */
+    font-weight: 300;
+}
+
+.who-we-are-content {
+    color: #003366; /* Adjust content text color as needed */
+    font-size: 20px; /* Adjust font size as needed */
+
+}
+/* -------------------------------mission vision---------------------------------------------- */
+.vision-mission-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap the items if not enough space */
+    gap: 20px; /* Add space between the elements */
+    justify-content: space-between; /* Distribute extra space evenly */
+    text-align: left;
+    
+    /* padding: 20px; */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+  }
+  
+  .vision-mission-section {
+    flex-basis: calc(50% - 20px); /* Subtract the gap from the 50% width */
+    max-width: 50%;
+    box-sizing: border-box;
+    padding-left: 0px;
+  }
+  
+  .vision-mission-title {
+    font-size: 2em;
+    color: #003366;
+    margin-bottom: 0.5em;
+    font-weight: bolder;
+    padding-left: 0px;
+  }
+  
+  .vision-mission-tagline {
+    /* font-size: 1.em; */
+    margin-bottom: 0.5em;
+    padding-left: 0px;
+  }
+  
+  .vision-mission-image-container {
+    width: 100%; /* Make the image container take the full width */
+    overflow: hidden; /* Hide the overflowed part of the image */
+  }
+  
+  .vision-mission-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Cover the container while maintaining aspect ratio */
+  }
+  
+  .vision-mission-text {
+    font-size: 1em;
+    color: #333;
+  }
+  
+ /* Responsive adjustments for screens larger than 768px */
+@media (min-width: 768px) {
+  .vision-mission-container {
+      gap: 30px; /* Increase space between elements for better visual separation */
+  }
+  .vision-mission-section {
+      flex-basis: calc(50% - 30px); /* Adjust basis to account for increased gap */
+  }
+  .vision-mission-title {
+      font-size: 2.5em; /* Increase the font size for better readability */
+  }
+  .vision-mission-tagline {
+      font-size: 1.75em; /* Slightly larger tagline font size */
+  }
+  .vision-mission-text {
+      font-size: 1.2em; /* Larger text size for easier reading */
+  }
+}
+
+/* ---------------------------core values--------------------------------------- */
+.value-card h5{
+  margin-top: 100px;
+}
+.values-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left; /* Align items to the left */
+}
+.container{
+  padding-left: 0px;
+}
+
+.value-card {
+  flex: 0 0 30%; /* Do not grow or shrink, base size is 30% */
+  margin-right: 2%; 
+  /* between the cards */
+  margin-bottom: 20px; /* Spacing between rows */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  text-align: LEFT;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background: #003366;
+  border-radius: 8px;
+  color: #f9f9f9;
+}
+
+/* Every 3rd item should not have a margin on the right to fit exactly 3 in a row */
+.value-card:nth-child(3n) {
+  margin-right: 0;
+}
+.value-icon{
+  height:160px ;
+  width:45px ;
+}
+
+@media (max-width: 768px) {
+  .value-card {
+      flex: 0 0 100%; /* Full width on smaller screens */
+      margin-right: 0; /* Remove margin right on smaller screens */
+  }
+}
+
+/* --------------------story number------------------ */
+.story-container h1{
+  color: #003366;
+ /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); Adding some shadow for better visibility */
+}
+
+
+
+
+.story-grid {
+    display: flex;
+    justify-content: space-around; /* Distribute space evenly */
+    flex-wrap: wrap; /* Allow items to wrap in smaller screens */
+    text-align: center;
+}
+
+.story-item {
+    width: 20%; /* Each item takes up 20% of the container width */
+    /* padding: 10px; */
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Space below each item */
+}
+
+.story-item h3 {
+    font-size: 1.8em;
+    color: #ff8800;
+    font-weight: bolder;
+    margin-bottom: 5px; /* Space below the number */
+}
+
+.story-item p {
+    font-size: 1em;
+    color: #666;
+    /* font-weight: bolder; */
+}
+
+.story-detail {
+    text-align: justify;
+    padding: 20px;
+    font-size: 1em;
+    color: #444;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .story-item {
+        width: 50%; /* Each item takes half the width on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .story-item {
+        width: 100%; /* Each item takes full width on very small screens */
+    }
+}
+.founder-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
+  /* margin: 20px; */
+}
+
+.founder-content {
+  font-size: 18px;
+  flex: 0 1 80%; /* Takes up 80% of the container */
+  padding-right: 20px; /* Adds some padding between the text and the image */
+}
+
+.founder {
+  flex: 0 1 20%; /* Takes up 20% of the container */
+  text-align: center; /* Center-aligns the image within its div */
+}
+
+.founder img {
+  width: 350px; /* Adjust based on your layout needs */
+  height: auto; /* Maintains aspect ratio */
+  /* max-width: 100%; Ensures the image does not overflow its container */
+  padding-right: 30px;
+}
+
+@media (max-width: 768px) {
+  .founder-section {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .founder-content, .founder {
+    padding-top: 20px;
+
+      flex: 0 0 100%; /* Both take full width on smaller screens */
+      padding-right: 0; /* Removes padding on smaller screens */
+  }
+
+  .founder img {
+      max-width: 50%; /* Smaller image on mobile */
+  }
+}
+
+/* -------leadership------------- */
+
+  .leadership-title {
+    font-size: 2.5em;
+    color: #003366;; /* Dark grey color for the title text */
+    margin-bottom: 30px; /* Space below the title */
+    /* text-align: left; */
+
+  }
+
+  .leaders-container {
+    display: flex;
+    justify-content:space-between;
+    /* flex-wrap: wrap; Allows items to wrap in smaller screens */
+    gap: 20px; /* Space between items */
+  }
+
+  .leader {
+    width: 250px; /* Fixed width for each leader */
+    text-align: center;
+  }
+
+  .leader img {
+    width: 100%;
+    height: auto;
+    /* box-shadow: 0 4px 8px rgba(0,0,0,0.1); Soft shadow for images */
+  }
+
+  .leader-title {
+    font-size: 1.2em;
+    color: #003366; /* Blue color for names */
+    margin-top: 10px; /* Space above the name */
+  }
+
+  .leader-role {
+    font-size: 1em;
+    color: #666; /* Lighter text color for role */
+  }
+
+  @media (max-width: 768px) {
+    .leader {
+      width: 150px; /* Smaller width for smaller screens */
+    }
+  }
+/* ------------------------------------------------------------------ */
+.modal-image {
+  width: 450px; /* Set width to 200 pixels */
+  height: 250px; /* Set height to 100 pixels */
+  margin-right: 20px; /* Space between image and text */
+  /* flex-shrink: 0; Prevents resizing of the image */
+  object-fit: cover; /* Ensures the image covers the frame without distorting aspect ratio */
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+.modal-header {
+  display: flex;
+  align-items: flex-start; /* Aligns items to the top */
+  padding-bottom: 10px; /* Spacing between header and body */
+}
+.modal-title{
+  font-weight: 600;
+}
+.modal-role{
+  font-weight: 600;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  overflow-y: scroll;
+  height: 400px;
+
+}
+
+.close-button {
+  color: #ff6200;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* * ---------------------------------- */ 
+.tech-innovation-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    /* background-color: #f9f9f9; Example background color */
+  }
+
+  .tech-innovation-content {
+    width: 50%;
+    padding-right: 20px;
+  }
+  .tech-innovation-content h4{
+    color: #003366;
+    font-weight: 600;
+    padding-top: 20px;
+  }
+ 
+
+  .tech-innovation-title {
+    font-size: 2.5em;
+    color: #003366; /* Adjust to your preferred color */
+
+  }
+
+  .tech-innovation-text {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #333; /* Dark grey color for text */
+  }
+
+  .tech-innovation-list {
+    margin-top: 30px;
+    display: flex;
+    /* justify-content: space-between; */
+    padding-left: 0px;
+    list-style: none; /* Removes default list styling */
+  }
+
+  .tech-innovation-list li {
+    margin-bottom: 10px;
+    padding-right: 20px;
+
+  }
+
+  .tech-innovation-list li:before {
+    /* content: '✔️'; Example bullet point */
+    margin-right: 5px;
+    color: #009688; /* Adjust to your preferred color */
+  }
+ .tech-innovation-list img{
+
+  justify-content: flex-start;
+  color: #333;
+ 
+ }
+
+  .tech-innovation-image {
+    width: 50%;
+    display: flex; /* This will help to keep the image in the right place */
+    justify-content: flex-end; /* Aligns the image to the right */
+  }
+
+  .tech-innovation-image img {
+
+    width: 100%;
+    height:300px;
+    /* border-radius: 10px; Optional: if you want rounded corners */
+  }
+  .tech-innovation-lst{
+    padding-left: 15px;
+    padding-right: 30px;
+
+  }
+
+  @media (max-width: 768px) {
+    .tech-innovation-section {
+      flex-direction: column;
+    }
+
+    .tech-innovation-content,
+    .tech-innovation-image {
+      width: 100%;
+    }
+
+    .tech-innovation-image img {
+      margin-top: 20px; /* Adds space between text and image on smaller screens */
+    }
+  }
+/* -----------partnership----------- */
+.partnership-section {
+    display: flex;
+    align-items: center;
+    /* background-color: #f0f0f0; Light grey background */
+    /* padding: 20px; */
+    
+    /* border-bottom: 4px solid #ccc; Grey border at the bottom */
+  }
+
+  .partnership-logo {
+    flex-basis: 150px; /* Adjust the width of the logo section */
+    padding-right: 20px; /* Space between the logo and the text */
+  }
+
+  .partnership-logo img {
+    width: 300px;
+    height: 280px;
+    background-color: rgb(231, 233, 233);
+  }
+
+  .partnership-content {
+    flex-grow: 1; /* Takes up the remaining space */
+    text-align: left;
+  }
+
+  .partnership-content h1 {
+    color: #003366; /* Adjust the color to match your style */
+    /* margin-bottom: 0.5em; */
+    text-align: left;
+  }
+
+  .partnership-content p {
+    color: #333;
+    line-height: 1.6;
+    font-size: 1em;
+  }
+
+  .partnership-content a {
+    color: #003366; /* Link color */
+    text-decoration: none; /* No underline on the link */
+  }
+
+  .partnership-content a:hover {
+    text-decoration: underline; /* Underline on hover for the link */
+  }
+
+  @media (max-width: 768px) {
+    .partnership-section {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .partnership-logo {
+      padding-bottom: 20px; /* Space between the logo and the text on smaller screens */
+    }
+  }
+  /* --------infrastructure-------------------- */
+  .infrastructure-section {
+    width: 750px; /* Match the width of the image */
+    margin: auto; /* Center the section */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light grey background for visibility */
+  }
+
+  .infrastructure-title {
+    text-align: left;
+    color: #003366; /* Dark blue color for the title */
+    font-size: 2.5em;
+    margin-bottom: 20px; /* Space below the title */
+  }
+
+  .infrastructure-content {
+    display: flex;
+    flex-direction: column; /* Stack images and text vertically */
+    gap: 20px; /* Space between elements */
+  }
+
+
+
+  .infrastructure-text {
+    text-align: justify;
+    font-size: 1em;
+    color: #333; /* Dark grey for text */
+  }
+
+  /* Add media queries for responsive adjustments */
+  @media (max-width: 768px) {
+    .infrastructure-section {
+      width: 100%; /* Full width on smaller screens */
+    }
+  }
+  .infrastructure-image-container {
+    display: flex;
+    justify-content: space-between; /* Or 'space-around' depending on how you want to space the images */
+    /* gap: 10px; Adjust as needed */
+  }
+  
+  .infrastructure-img {
+    width: 49%; /* Adjust the width so both images can fit side by side */
+    height: 300px;
+    padding: 0%;
+    /* border-radius: 4px; Optional: if you want rounded corners for images */
+  }
+ 
