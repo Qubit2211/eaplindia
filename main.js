@@ -55,7 +55,7 @@ class MyHeader extends HTMLElement {
                  <a class="nav-link" href="blog.html">News & Events</a>
                </li>
                <li class="nav-item">
-                 <a href="about.html" class="btn btn-outline-secondary xeshop" id="xeshop">e-Shop</a>
+                 <a href="https://93b608-7d.myshopify.com/" class="btn btn-outline-secondary xeshop" id="xeshop">e-Shop</a>
                </li>
                <li class="nav-item">
                  <a class="nav-link" href="contact.html">Contact</a>
