@@ -32,9 +32,9 @@
          </section>
          <section class="container py-5">
             <div class="tab-list">
-               <a class="nav-link scrollto active" href="#Basic Meter">Basic Meter</a>
-               <a class="nav-link scrollto" href="#DC Multifunctionel Meter">DC Functional Meter</a>
-               <a class="nav-link scrollto" href="#Maximum Demand Controller">Maximum Demand Controller</a>
+               <a class="nav-link scrollto active" href="#Basic-Meter">Basic Meter</a>
+               <a class="nav-link scrollto" href="#DC-Multifunction-Meter">DC Multifunction Meter</a>
+               <a class="nav-link scrollto" href="#Maximum-Demand-Controller">Maximum Demand Controller</a>
             </div>
             <script>
                document.querySelectorAll('.tab-list a').forEach(function(tab) {
@@ -45,14 +45,14 @@
                        document.querySelectorAll('.product').forEach(function(product) {
                            product.style.display = 'none';
                        });
-                       document.querySelector(tab.getAttribute('href')).style.display = 'flex';
+                       document.querySelector(tab.getAttribute('href').replace(/ /g, '-')).style.display = 'flex';
                    });
                });
             </script>
             <div class="row">
                <div class="col-md-12">
-                  <div class="product product-content" id="Basic Meter">
-                     <img src=".qubit2211.github.io/eapl/images/Basic%20Meters.png" alt="Basic Meter">
+                  <div class="product product-content" id="Basic-Meter">
+                     <img src="./images/Basic Meter.png" alt="Basic Meter">
                      <div class="product-info">
                         <h3>Basic Meter</h3>
                         <div class="features">
@@ -81,8 +81,8 @@
                         </div>
                      </div>
                   </div>
-                  <div class="product product-content" id="DC Multifunction Meter" style="display: none;">
-                     <img src=".qubit2211.github.io/eapl/images/DC%20Multifunction%20Meters%20SNM%2003.png" alt="DC Multifunction Meter">
+                  <div class="product product-content" id="DC-Multifunction-Meter" style="display: none;">
+                     <img src="./images/DC-Multifunction-Meter.png" alt="DC Multifunction Meter">
                      <div class="product-info">
                         <h3>DC Multifunction Meter</h3>
                         <div class="features">
@@ -111,8 +111,8 @@
                         </div>
                      </div>
                   </div>
-                  <div class="product product-content" id="Maximum Demand Controller" style="display: none;">
-                     <img src="./eapl/images/Maximum%20Demand%20Meters%20EMS%2015c.png" alt="Maximum Demand Controller">
+                  <div class="product product-content" id="Maximum-Demand-Controller" style="display: none;">
+                     <img src="./images/Maximum-Demand-Controller.png" alt="Maximum Demand Controller">
                      <div class="product-info">
                         <h3>Maximum Demand Controller</h3>
                         <div class="features">

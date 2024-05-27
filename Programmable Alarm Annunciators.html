@@ -25,16 +25,16 @@
             <div class="row">
                <div class="col">
                   <h5>
-                     EAPL annunciators comes in UL rated ABS sleek, compact and light enclosures. The windows glow slides/caps can be replaceable at site based on colour requirement. For programming fault input & relay output configuration, front buttons are provided in addition to terminals at the rear
+                     EAPL annunciators come in UL rated ABS sleek, compact, and light enclosures. The window glow slides/caps can be replaced at the site based on color requirements. For programming fault input & relay output configuration, front buttons are provided in addition to terminals at the rear.
                   </h5>
                </div>
             </div>
          </section>
          <section class="container py-5">
             <div class="tab-list">
-               <a class="nav-link scrollto active" href="M2 Series">M2 Series</a>
-               <a class="nav-link scrollto" href="#M3 Series">M3 Series</a>
-               <a class="nav-link scrollto" href="#Alarm Indicator">Alarm Indicator</a>
+               <a class="nav-link scrollto active" href="#M2-Series">M2 Series</a>
+               <a class="nav-link scrollto" href="#M3-Series">M3 Series</a>
+               <a class="nav-link scrollto" href="#Alarm-Indicator">Alarm Indicator</a>
             </div>
             <script>
                document.querySelectorAll('.tab-list a').forEach(function(tab) {
@@ -45,22 +45,22 @@
                        document.querySelectorAll('.product').forEach(function(product) {
                            product.style.display = 'none';
                        });
-                       document.querySelector(tab.getAttribute('href')).style.display = 'flex';
+                       document.querySelector(tab.getAttribute('href').replace(/ /g, '-')).style.display = 'flex';
                    });
                });
             </script>
             <div class="row">
                <div class="col-md-12">
-                  <div class="product product-content" id="M2 Series">
-                     <img src="./images/M2 series.png" alt="M2  Series">
+                  <div class="product product-content" id="M2-Series">
+                     <img src="./images/M2 Series.png" alt="M2 Series Timers">
                      <div class="product-info">
                         <h3>M2 Series</h3>
                         <div class="features">
                            <h5>Features</h5>
                            <ul class="feature-list">
-                              <li>Micro processor based design with super bright SMD LEDs</li>
-                              <li>Sequence of operation - Manual /Auto Reset / Manual Reset with ring back/FIFO</li>
-                              <li>RS-485 Mod-bus communication available in select models.</li>
+                              <li>Microprocessor-based design with super bright SMD LEDs</li>
+                              <li>The sequence of operation - Manual /Auto Reset / Manual Reset with ring back/FIFO - User Selectable</li>
+                              <li>RS-485 Mod-bus communication is available in select models</li>
                            </ul>
                         </div>
                         <div class="applications">
@@ -81,21 +81,22 @@
                         </div>
                      </div>
                   </div>
-                  <div class="product product-content" id="M3 Series" style="display: none;">
+                  <div class="product product-content" id="M3-Series" style="display: none;">
                      <img src="./images/M3 Series.png" alt="M3 Series">
                      <div class="product-info">
                         <h3>M3 Series</h3>
                         <div class="features">
                            <h5>Features</h5>
                            <ul class="feature-list">
-                              <li>Micro processor based design with super bright SMD LEDs</li>
-                              <li>Sequence of operation - Manual /Auto Reset / Manual Reset with ring back/FIFO</li>
-                              <li>RS-485 Mod-bus communication available in select models.</li>
+                              <li>Microprocessor-based design with super bright SMD LEDs</li>
+                              <li>Master and slave units are available in 4,6 & 8 windows</li>
+                              <li>Incorporates a built-in buzzer in addition to fault alarm relay output.</li>
+                              <li>User-selectable sequence of operations-Manual/Auto reset/ Manual reset with ring back / FIFO</li>
                            </ul>
                         </div>
                         <div class="applications">
                            <h5>Applications</h5>
-                           <p>C&R panels, Transformer panels, DG set panels, Fire annunciation panels, Instrumentation panels and many more</p>
+                           <p>C&R panels, Transformer panels, DG set panels, Fire annunciation panels, Instrumentation panels and many more.</p>
                         </div>
                         <div class="button-container-product py-3">
                            <!-- Buttons with icons -->
@@ -111,7 +112,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="product product-content" id="Alarm Indicator" style="display: none;">
+                  <div class="product product-content" id="Alarm-Indicator" style="display: none;">
                      <img src="./images/Alarm Indicator.png" alt="Alarm Indicator">
                      <div class="product-info">
                         <h3>Alarm Indicator</h3>
@@ -124,7 +125,7 @@
                         </div>
                         <div class="applications">
                            <h5>Applications</h5>
-                           <p>C&R panels, Transformer panels, DG set panels, Instrumentation panels and many more.</p>
+                           <p>C&R panels, Transformer panels, DG set panels, Instrumentation panels and many more</p>
                         </div>
                         <div class="button-container-product py-3">
                            <!-- Buttons with icons -->
@@ -150,4 +151,6 @@
          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
          <!-- Custom Elements JS -->
-       </html>
+      </main>
+</body>
+</html>
