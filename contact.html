@@ -104,40 +104,46 @@
   </style>
 </section>
 <div class="container py-3">
-   <form>
+   <form action="https://api.web3forms.com/submit" method="POST">
+    <!-- Replace with your Access Key -->
+    <input type="hidden" name="access_key" value="3d6a9a81-01fb-4146-8c9a-5cf5a9c87609">
+
       <div class="row g-3">
          <div class="col-md-6">
-            <input type="text" class="form-control" placeholder="Name *" required>
+            <input type="text" name="name" class="form-control" placeholder="Name *" required>
          </div>
          <div class="col-md-6">
-            <input type="text" class="form-control" placeholder="Company">
+            <input type="text" name="Company" class="form-control" placeholder="Company">
          </div>
          <div class="col-md-6">
-            <input type="text" class="form-control" placeholder="Address">
+            <input type="text" name="Address" class="form-control" placeholder="Address">
          </div>
          <div class="col-md-6">
-            <input type="text" class="form-control" placeholder="City">
+            <input type="text" name="City" class="form-control" placeholder="City">
          </div>
          <div class="col-md-6">
-            <input type="text" class="form-control" placeholder="Zip">
+            <input type="text" name="Zip" class="form-control" placeholder="Zip">
          </div>
          <div class="col-md-6">
-            <input type="text" class="form-control" placeholder="Country *" required>
+            <input type="text" name="Country" class="form-control" placeholder="Country *" required>
          </div>
          <div class="col-md-6">
-            <input type="email" class="form-control" placeholder="Email *" required>
+            <input type="email" name="Email" class="form-control" placeholder="Email *" required>
          </div>
          <div class="col-md-6">
-            <input type="tel" class="form-control" placeholder="Phone number *" required>
+            <input type="tel" name="Number"class="form-control" placeholder="Number *" required>
          </div>
          <div class="col-12">
-            <textarea class="form-control" placeholder="Query/Comments *" required></textarea>
+            <textarea class="form-control" name="Message" placeholder="Message *" required></textarea>
          </div>
          <div class="col-12 form-footer">
             <button type="submit" class="btn btn-primary">Submit</button>
          </div>
       </div>
+      <input type="hidden" name="redirect" value="http://127.0.0.1:5500/thankyou.html">
    </form>
+   <script src="https://web3forms.com/client/script.js" async defer></script>
+   
 </div>
 <section class="contact-section container">
    <div class="contact-column">
