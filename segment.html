@@ -8,6 +8,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./segment.css">
   <link rel="stylesheet" href="./global.css">
@@ -21,11 +23,7 @@
       <h1>Versatile, innovative<br>smart solutions for the New India</h1>
     </div>
   </section>
-  <section class="container py-5">
-    <p>
-      Driving Innovation for a Smarter India: Innovative Products and Smart Solutions
-    </p>
-  </section>
+
 
   <style>
     .hero-section {
@@ -74,7 +72,7 @@
     }
   </style>
 
-  <section class="container py-3">
+  <section class="container">
     <ul class="tab-list">
       <a class="active nav-link scrollto tabx" href="#building" data-target="building">Buildings</a>
       <a class="nav-link scrollto" href="#industry" data-target="industry">Industry</a>
@@ -131,7 +129,95 @@
           </div>
         </div>
       </div>
+      <div class="container mt-5 py-3">
+        <h2>Related Products</h2>
+        <div class="d-flex justify-content-between align-items-center">
+           <button class="btn" onclick="scrollSlider(-300)">&#10094;</button>
+           <div class="product-slider" id="productSlider">
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <!-- Add more product cards as needed -->
+           </div>
+           <button class="btn" onclick="scrollSlider(300)">&#10095;</button>
+        </div>
+     </div>
     </section>
+
+
+
 
     <section class="container py-3 "id="industry">
       <div class="industry-header" >
@@ -139,7 +225,7 @@
         <p>Process Control | Machine Control | Power Control</p>
         <h5>Our Industry 4.0 IOT solutions help you deliver higher productivity & better efficiency</h5>
       </div>
-      <div class="xcontainer">
+      <div class="industry-container">
    
         <div class="column">
             <div class="column-inner">
@@ -171,50 +257,95 @@
             </div>
         </div>
      </div>
-     <style>
-        .xcontainer {
-        
-                 display: flex;
-                 flex-wrap: wrap;
-                 margin: 0 -10px; /* Adjusts for padding inside columns */
-             }
-             .column {
-                 flex: 25%; /* Each column takes up 25% of the container */
-                 max-width: 25%;
-                 padding: 10px;
-                 box-sizing: border-box;
-             }
-             .column-inner {
-               background-color: linear-gradient(to right, #1697c1, #1697c1);
-                 background-color: #e0e0e0; 
-                 /* Light gray background for each column */
-                 padding: 20px;
-                 border-radius: 8px;
-                 text-align: left;
-                 height: 300px;
-     
-             }
-             .column-inner img {
-                 width: 100%;
-                 height: 150px;
-                 border-radius: 8px;
-                 padding-bottom: 12px;
-             }
-             @media screen and (max-width: 768px) {
-                 .column {
-                     flex: 50%; /* Each column takes up 50% on smaller screens */
-                     max-width: 50%;
-                 }
-             }
-             @media screen and (max-width: 480px) {
-                 .column {
-                     flex: 100%; /* Each column takes up 100% on very small screens */
-                     max-width: 100%;
-                 }
-             }
-     </style>
+     <div class="container mt-5 py-3">
+      <h2>Related Products</h2>
+      <div class="d-flex justify-content-between align-items-center">
+         <button class="btn" onclick="scrollSlider(-300)">&#10094;</button>
+         <div class="product-slider" id="productSlider">
+            <div class="product-card">
+               <img src="images/digital-timer.png" alt="Product 1">
+               <div class="title">Sample Product Title</div>
+               <div class="price">20.00</div>
+            </div>
+            <div class="product-card">
+               <img src="images/digital-timer.png" alt="Product 1">
+               <div class="title">Sample Product Title</div>
+               <div class="price">20.00</div>
+            </div>
+            <div class="product-card">
+               <img src="images/digital-timer.png" alt="Product 1">
+               <div class="title">Sample Product Title</div>
+               <div class="price">20.00</div>
+            </div>
+            <div class="product-card">
+               <img src="images/digital-timer.png" alt="Product 1">
+               <div class="title">Sample Product Title</div>
+               <div class="price">20.00</div>
+            </div>
+            <div class="product-card">
+               <img src="images/digital-timer.png" alt="Product 1">
+               <div class="title">Sample Product Title</div>
+               <div class="price">20.00</div>
+            </div>
+            <div class="product-card">
+               <img src="images/digital-timer.png" alt="Product 1">
+               <div class="title">Sample Product Title</div>
+               <div class="price">20.00</div>
+            </div>
+            <div class="product-card">
+               <img src="images/digital-timer.png" alt="Product 1">
+               <div class="title">Sample Product Title</div>
+               <div class="price">20.00</div>
+            </div>
+            <div class="product-card">
+               <img src="images/digital-timer.png" alt="Product 1">
+               <div class="title">Sample Product Title</div>
+               <div class="price">20.00</div>
+            </div>
+            <div class="product-card">
+               <img src="images/digital-timer.png" alt="Product 1">
+               <div class="title">Sample Product Title</div>
+               <div class="price">20.00</div>
+            </div>
+            <div class="product-card">
+               <img src="images/digital-timer.png" alt="Product 1">
+               <div class="title">Sample Product Title</div>
+               <div class="price">20.00</div>
+            </div>
+            <div class="product-card">
+               <img src="images/digital-timer.png" alt="Product 1">
+               <div class="title">Sample Product Title</div>
+               <div class="price">20.00</div>
+            </div>
+            <div class="product-card">
+               <img src="images/digital-timer.png" alt="Product 1">
+               <div class="title">Sample Product Title</div>
+               <div class="price">20.00</div>
+            </div>
+            <div class="product-card">
+               <img src="images/digital-timer.png" alt="Product 1">
+               <div class="title">Sample Product Title</div>
+               <div class="price">20.00</div>
+            </div>
+            <div class="product-card">
+               <img src="images/digital-timer.png" alt="Product 1">
+               <div class="title">Sample Product Title</div>
+               <div class="price">20.00</div>
+            </div>
+            <div class="product-card">
+               <img src="images/digital-timer.png" alt="Product 1">
+               <div class="title">Sample Product Title</div>
+               <div class="price">20.00</div>
+            </div>
+            <!-- Add more product cards as needed -->
+         </div>
+         <button class="btn" onclick="scrollSlider(300)">&#10095;</button>
+      </div>
+   </div>
+
+
      </section>
-    <section class="container" id="utility">
+    <section class="container py-3" id="utility">
       <div class="conbuildings-section utility" >
         <h1 class="buildings-title">Utility</h1>
         <h5 class="buildings-description">As automation continues to increase at every stage of smart grid control system, 
@@ -236,28 +367,324 @@
           </div>
         </div>
       </div>
+      <div class="container mt-5 py-3">
+        <h2>Related Products</h2>
+        <div class="d-flex justify-content-between align-items-center">
+           <button class="btn" onclick="scrollSlider(-300)">&#10094;</button>
+           <div class="product-slider" id="productSlider">
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <!-- Add more product cards as needed -->
+           </div>
+           <button class="btn" onclick="scrollSlider(300)">&#10095;</button>
+        </div>
+     </div>
     </section>
 
     <section class="container py-3" id="mobility">
-      <div class="industry-header mobility" >
-        <h1>Mobility</h1>
+      <h1>Mobility</h1>
         <p>Process Control | Machine Control | ​Power Control</p>
-        <h5>Our advance relays and seasoning technologies ensure safe and smooth mobility</h5>
-        <p>Electronic Time Delay Device commonly referred as Fail Safe Timer (FST) is designed to control Railway Signaling circuits.</p>
-        <img src="images/mobility.png" alt="mobility" style="width: 100%;max-height: 50%;">
+        
       </div>
+      <div class="features-container ">
+        <div class="feature-image">
+          <img src="./images/mobility.png" alt="mobility">
+        </div>
+        <div class="feature-details">
+          <div class="feature-item">
+            <!-- <h2 class="feature-title">Programmable Annunciators</h2> -->
+            <h5>Our advance relays and seasoning technologies ensure safe and smooth mobility</h5>
+            <p class="feature-description">Electronic Time Delay Device commonly referred as Fail Safe Timer (FST) is designed to control Railway Signaling circuits.</p>
+          </div>
+          
+        </div>
+      </div>
+      <div class="container mt-5 py-3">
+        <h2>Related Products</h2>
+        <div class="d-flex justify-content-between align-items-center">
+           <button class="btn" onclick="scrollSlider(-300)">&#10094;</button>
+           <div class="product-slider" id="productSlider">
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <!-- Add more product cards as needed -->
+           </div>
+           <button class="btn" onclick="scrollSlider(300)">&#10095;</button>
+        </div>
+     </div>
     </section>
+
 
     <section class="container py-3" id="smartCities">
       <div class="industry-header smartCities" >
         <h1>Smart cities</h1>
-        <h5>Our Smart Solutions are tailored to equip cities with intelligent lighting systems, ensuring the safety and security of communities</h5>
-        <p>Our street light Smart control system improves energy efficiency in the long run, extends the service lifetime, and gives people an excellent user experience.</p>
-        <img src="./images/smartcity.png" alt="Smart city" style="width: 100%;max-height: 50%;">
+        
       </div>
+      <div class="features-container ">
+        <div class="feature-image">
+          <img src="./images/smartcity.png" alt="smartCities">
+        </div>
+        <div class="feature-details">
+          <div class="feature-item">
+            <!-- <h2 class="feature-title">Programmable Annunciators</h2> -->
+            <h5>Our Smart Solutions are tailored to equip cities with intelligent lighting systems, ensuring the safety and security of communities</h5>
+            <p>Our street light Smart control system improves energy efficiency in the long run, extends the service lifetime, and gives people an excellent user experience.</p>
+          </div>
+          
+        </div>
+      </div>
+      <div class="container mt-5 py-3">
+        <h2>Related Products</h2>
+        <div class="d-flex justify-content-between align-items-center">
+           <button class="btn" onclick="scrollSlider(-300)">&#10094;</button>
+           <div class="product-slider" id="productSlider">
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <div class="product-card">
+                 <img src="images/digital-timer.png" alt="Product 1">
+                 <div class="title">Sample Product Title</div>
+                 <div class="price">20.00</div>
+              </div>
+              <!-- Add more product cards as needed -->
+           </div>
+           <button class="btn" onclick="scrollSlider(300)">&#10095;</button>
+        </div>
+     </div>
     </section>
-  </main>
+ 
+
+
+<script>
+  function scrollSlider(amount) {
+      document.getElementById('productSlider').scrollBy({
+          left: amount,
+          behavior: 'smooth'
+      });
+  }
+</script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+
+
+  
+</main>
+
   <my-footer></my-footer>
+</body>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
 
   <!-- Bootstrap JS and dependencies -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

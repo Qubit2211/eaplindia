@@ -1,4 +1,10 @@
 /* ----------------hero section-------------------- */
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0px;
+}
+
+
 .hero-section {
   color: white; 
   background-image: url('./images/about-hero-banner.png'); 
@@ -58,35 +64,47 @@
 }
 
 /* ----------------------------------------- */
-.who-we-are-section {
-  background-color: #fff; 
+.container {
+  /* display: flex; */
+
   width: 100%;
-  padding: 12px 0; 
+  margin-bottom: 20px;
+}
+
+.who-we-are-section {
+  width: 100%; /* Adjust width as needed to fit your design */
   text-align: left;
-  padding-left: 10px;
 }
 
-.who-we-are-title, .vision-mission-title {
-  color: #003366; 
-  font-size: 2.5rem; 
-  margin-bottom: 1rem; 
+.who-we-are-title {
+  font-size: 2em; /* Adjust font-size as needed */
+  margin-bottom: 20px; /* Adjust margin as needed */
 }
 
-.who-we-are-content, .vision-mission-text, .infrastructure-text {
-  color: #003366; 
-  font-size: 1rem;
-  line-height: 1.5;
+.who-we-are-content {
+  font-size: 1.2em; /* Adjust font-size as needed */
+  margin-top: 20px; /* Adjust margin as needed */
 }
 
-.vision-mission-container, .values-container, .story-container, .leadership-container, .tech-innovation-section, .partnership-section, .infrastructure-content {
-  margin-bottom: 2rem;
+@media (max-width: 768px) {
+  .who-we-are-section {
+      width: 90%; /* Adjust width as needed */
+  }
+
+  .who-we-are-title {
+      font-size: 1.5em; /* Adjust font-size as needed */
+  }
+
+  .who-we-are-content {
+      font-size: 1em; /* Adjust font-size as needed */
+  }
 }
+
 
 /* -------------------------------mission vision---------------------------------------------- */
 .vision-mission-container {
   display: flex;
   flex-wrap: wrap; 
-  gap: 20px; 
   justify-content: space-between; 
   text-align: left;
   box-sizing: border-box; 
@@ -100,15 +118,16 @@
 }
 
 .vision-mission-title {
-  font-size: 2em;
   color: #003366;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.1em;
   padding-left: 0;
 }
 
 .vision-mission-tagline {
-  margin-bottom: 0.5em;
   padding-left: 0;
+  font-weight: 600;
+  margin-bottom: 0.1em;
+
 }
 
 .vision-mission-image-container {
@@ -118,12 +137,10 @@
 
 .vision-mission-image {
   width: 100%;
-  height: 35%;
   object-fit: cover; 
 }
 
 .vision-mission-text {
-  font-size: 1em;
   color: #333;
 }
 
@@ -134,421 +151,324 @@
   .vision-mission-section {
     flex-basis: calc(50% - 30px); 
   }
-  .vision-mission-title {
-    font-size: 2.5em; 
-  }
-  .vision-mission-tagline {
-    font-size: 1.75em; 
-  }
-  .vision-mission-text {
-    font-size: 1.2em; 
-  }
+  
 }
 
-/* ---------------------------core values--------------------------------------- */
-.values-container {
+/* core values */
+.container-core-values {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: left;
-  padding-left: 0;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; Adjust this to fit your container's height */
+}
+.values-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust minmax value as needed */
+    gap: 20px; /* Adjust the gap as needed */
+    width: 100%; /* Adjust width as needed to fit your design */
 }
 
 .value-card {
-  flex: 0 0 30%; 
-  margin-right: 2%; 
-  margin-bottom: 20px; 
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  padding: 20px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  background: #003366;
-  border-radius: 8px;
-  color: #f9f9f9;
-}
-
-.value-card h5 {
-  margin-top: 100px;
-}
-
-.value-card:nth-child(3n) {
-  margin-right: 0;
-}
-
-.value-icon {
-  height: 18px;
-  width: 45px;
-}
-
-@media (max-width: 768px) {
-  .value-card {
-    flex: 0 0 100%; 
-    margin-right: 0;
-  }
-}
-
-/* --------------------story number------------------ */
-.story-container h1 {
-  color: #003366;
-}
-
-.story-grid {
-  display: flex;
-  justify-content: center; 
-  flex-wrap: wrap; 
-  text-align: center;
-}
-
-.story-item {
-
-  width: 20%; 
-  box-sizing: border-box;
-  margin-bottom: 20px; 
-  text-align: center;
-}
-
-.story-item h3 {
-  font-size: 1.8em;
-  color: #ff8800;
-  margin-bottom: 5px; 
-  font-weight: 900;
-
-}
-
-.story-item p {
-  font-size: 1em;
-  color: #666;
-}
-
-.story-detail {
-  text-align: justify;
-  padding: 20px;
-  font-size: 1em;
-  color: #444;
-  line-height: 1.6;
-}
-
-@media (max-width: 768px) {
-  .story-item {
-    padding-left: 30px;
-    width:100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-  }
-
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional styling */
+    border-radius: 10px; /* Optional styling */
+    aspect-ratio: 1; /* Maintain a square ratio */
+    background-color: #003366;
+    color: #fff;
+}
+.value-card p{
+  margin-top: 10px;
 }
 
-@media (max-width: 480px) {
-  .story-item {
-    width: 100%; 
-  }
-
+/* story section */
+.story-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* height: 100vh; Adjust this if needed */
 }
 
-/* --------------------founder section------------------ */
+.story-container {
+  width: 100%; /* Adjust width as needed to fit your design */
+  text-align: center;
+}
+
+.story-title {
+  margin-bottom: 20px; /* Adjust margin as needed */
+}
+
 .founder-section {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  text-align: left;
-}
-
-.founder-content {
-  font-size: 18px;
-  flex: 0 1 80%; 
-  padding-right: 20px; 
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust gap as needed */
+  width: 80%;
 }
 
 .founder {
-  flex: 0 1 20%; 
-  text-align: center; 
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.founder img {
-  width: 350px; 
-  height: auto; 
-  padding-right: 30px;
+.founder-image {
+  height: 30%;
+  width:80%;
+  object-fit: cover; /* Ensure the image maintains its aspect ratio */
+  border-radius: 10px; /* Optional styling */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional styling */
+}
+
+.founder-content {
+  flex: 2;
+  text-align: left;
+  max-width: 600px; /* Adjust max-width as needed */
 }
 
 @media (max-width: 768px) {
   .founder-section {
-    flex-direction: column;
-    align-items: center;
+      flex-direction: column;
   }
-  .founder-content, .founder {
-    padding-top: 20px;
-    flex: 0 0 100%; 
-    padding-right: 0; 
+
+  .founder-image {
+      height: auto;
+      width: 100%;
   }
-  .founder img {
-    max-width: 100%; 
+
+  .founder-content {
+      text-align: center;
   }
 }
 
-/* --------------------leadership section------------------ */
-.leadership-title {
-  font-size: 2.5em;
-  color: #003366; 
-  margin-bottom: 30px;
+
+/* leadership */
+.leadership-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.leadership-container {
+  width: 100%; /* Adjust width as needed to fit your design */
+  text-align: center;
+}
+
+.vision-mission-title {
+  margin-bottom: 20px; /* Adjust margin as needed */
 }
 
 .leaders-container {
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Adjust gap as needed */
 }
 
 .leader {
-  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  margin-bottom: 1rem;
+  width: 200px; /* Adjust width as needed */
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional styling */
+  border-radius: 10px; /* Optional styling */
 }
 
-.leader img {
+.leader-image {
   width: 100%;
   height: auto;
+  border-radius: 10px; /* Optional styling */
+  object-fit: cover; /* Ensure the image maintains its aspect ratio */
 }
 
 .leader-title {
-  font-size: 1.2em;
-  color: #003366; 
-  margin-top: 10px;
+  margin-top: 10px; /* Adjust margin as needed */
+  font-weight: bold;
 }
 
 .leader-role {
-  font-size: 1em;
-  color: #666; 
-  margin-bottom: 1rem;
+  margin-top: 5px; /* Adjust margin as needed */
+  font-style: italic;
 }
 
 @media (max-width: 768px) {
+  .leaders-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
   .leader {
-    width: 150px;
+      width: 100%;
   }
 }
 
-/* --------------------modal section------------------ */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.4);
-}
 
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-  overflow-y: scroll;
-  height: 400px;
-}
+/* tech & innovation */
 
-.modal-header {
-  display: flex;
-  align-items: flex-start;
-  padding-bottom: 10px;
-}
-
-.modal-title, .modal-role {
-}
-
-.modal-image {
-  width: 450px;
-  height: 250px;
-  margin-right: 20px;
-  object-fit: cover;
-}
-
-.close-button {
-  color: #ff6200;
-  float: right;
-  font-size: 28px;
-  /* font-weight: bold; */
-}
-
-.close-button:hover,
-.close-button:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* --------------------tech innovation section------------------ */
 .tech-innovation-section {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
+  gap: 20px; /* Adjust gap as needed */
+  width: 100%; /* Adjust width as needed to fit your design */
 }
 
 .tech-innovation-content {
-  width: 50%;
-  padding-right: 20px;
-}
-
-.tech-innovation-content h4 {
-  color: #003366;
-  /* font-weight: 600; */
-  padding-top: 20px;
-}
-
-.tech-innovation-title {
-  font-size: 2.5em;
-  color: #003366; 
+  flex: 1;
+  max-width: 600px; /* Adjust max-width as needed */
 }
 
 .tech-innovation-text {
-  font-size: 1em;
-  margin-bottom: 20px;
-  color: #333; 
+  margin-bottom: 20px; /* Adjust margin as needed */
 }
 
 .tech-innovation-list {
-  margin-top: 30px;
-  display: flex;
-  list-style: none; 
+  list-style: none;
+  padding: 0;
 }
 
 .tech-innovation-list li {
-  margin-bottom: 10px;
-  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Adjust margin as needed */
 }
 
 .tech-innovation-list img {
-  margin-right: 1rem;
+  display: flex;
+  margin-right: 10px;
 }
+
 
 .tech-innovation-image {
-  width: 50%;
+  flex: 1;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
 }
 
-.tech-innovation-image img {
-  width: 100%;
-  height: 300px;
-}
-
-.tech-innovation-lst {
-  padding-left: 15px;
-  padding-right: 30px;
+.tech-image {
+  width: 80%;
+  height: auto;
+  border-radius: 10px; /* Optional styling */
+  object-fit: cover; /* Ensure the image maintains its aspect ratio */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional styling */
 }
 
 @media (max-width: 768px) {
   .tech-innovation-section {
-    flex-direction: column;
+      flex-direction: column;
   }
-  .tech-innovation-content,
-  .tech-innovation-image {
-    width: 100%;
-  }
-  .tech-innovation-image img {
-    margin-top: 20px;
+
+  .tech-innovation-content, .tech-innovation-image {
+      width: 100%;
   }
 }
+/* partnership section */
 
-/* --------------------partnership section------------------ */
+
 .partnership-section {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
   align-items: center;
+  gap: 20px;
+  width: 100%; /* Adjust width as needed to fit your design */
 }
 
 .partnership-logo {
-  flex-basis: 150px; 
-  padding-right: 20px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.partnership-logo img {
-  width: 300px;
-  height: 280px;
-  background-color: rgb(231, 233, 233);
+.partnership-image {
+
+  width: 60%;
+  height: 30%;
+  /* max-width: 300px; Adjust max-width as needed */
+  object-fit: cover; /* Ensure the image maintains its aspect ratio */
+  border-radius: 10px; /* Optional styling */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional styling */
 }
 
-.partnership-content {
-  flex-grow: 1; 
-  text-align: left;
+.partnership-text {
+  flex: 2;
+  max-width: 600px; /* Adjust max-width as needed */
 }
 
-.partnership-content h1 {
-  color: #003366; 
-  text-align: left;
-}
-
-.partnership-content p {
-  color: #333;
-  line-height: 1.6;
-  font-size: 1em;
-}
-
-.partnership-content a {
-  color: #003366; 
-  text-decoration: none;
-}
-
-.partnership-content a:hover {
-  text-decoration: underline;
+.vision-mission-title {
+  margin-bottom: 20px; /* Adjust margin as needed */
 }
 
 @media (max-width: 768px) {
   .partnership-section {
-    flex-direction: column;
-    text-align: center;
+      flex-direction: column;
   }
-  .partnership-logo {
-    padding-bottom: 20px; 
+
+  .partnership-image {
+      max-width: 100%;
+  }
+
+  .partnership-text {
+      text-align: center;
   }
 }
 
-/* --------------------infrastructure section------------------ */
-.infrastructure-section {
-  width: 750px; 
-  margin: auto; 
-  padding: 20px;
-  background-color: #f9f9f9; 
-}
 
-.infrastructure-title {
-  text-align: left;
-  color: #003366; 
-  font-size: 2.5em;
-  margin-bottom: 20px; 
-}
+/* infrastructure */
+
 
 .infrastructure-content {
-  display: flex;
-  flex-direction: column; 
-  /* gap: 20px;  */
+  padding: 0px;
+  width: 100%; /* Adjust width as needed to fit your design */
+  text-align: center;
 }
 
 .infrastructure-image-container {
   display: flex;
-  /* justify-content: space-between; */
-  justify-content: center;
-
-  flex-wrap: wrap;
-  /* margin-bottom: 1rem; */
+  justify-content: left;
+  align-items: center;
+  gap: 5px; /* Adjust gap as needed */
+  margin-bottom: 10px; /* Adjust margin as needed */
 }
 
 .infrastructure-img {
-  padding: 6px;
-  width: 30%; 
-  height: 190px;
+  padding: 0%;
+  width: 50%;
+  height: 100%;
+  border-radius: 10px; /* Optional styling */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional styling */
+}
+
+.infrastructure-text {
+  text-align: left;
+  margin-top: 20px; /* Adjust margin as needed */
 }
 
 @media (max-width: 768px) {
-  .infrastructure-section {
-    width: 100%; 
+  .infrastructure-image-container {
+      flex-direction: column;
   }
-}
 
-body {
-  margin: 0;
-  line-height: normal;
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
+  .infrastructure-img {
+      max-width: 100%;
+  }
+
+  .infrastructure-text {
+      text-align: center;
+  }
 }

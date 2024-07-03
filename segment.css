@@ -43,26 +43,28 @@
   }
 }
 /* ------------------------------------HERO BANNER END---------------------------------------------------- */
-
+ul{
+  padding: 0px;
+}
 .tab-list {
   margin-top: 30px;
   display: flex;
   list-style-type: none;
-  padding: 0;
   align-items: center;
-  justify-content: left;
-  padding-right: 30px;
+  justify-content: space-;
+  width: 100%;
 }
 
 .tab-list a {
-  padding: 10px 20px;
-  border: 1px solid #ffffff;
-  margin-right: 5px;
-  background-color: #f0f0f0;
+  padding:40px;
+  border-right: 1px solid #ffffff;
+  /* margin-right: 5px; */
+  background-color: #dddd;
   cursor: pointer;
   transition: background-color 0.3s;
-  border-radius: 25px;
   color: #000;
+  width: 100%;
+
 }
 
 .tab-list a:hover {
@@ -112,7 +114,6 @@ h1 {
 .feature-image img {
   width: 100%;
   height: 370px;
-  border-radius: 8px;
 }
 .feature-details {
   padding: 0 20px;
@@ -177,30 +178,28 @@ h1 {
   align-items: center;
 }
 
-.xcontainer {
+.industry-container {
   display: flex;
-  flex-wrap: wrap;
   margin: 0 -10px;
-  padding: 20px;
 }
 .column {
+  display: flex;
   flex: 25%;
   max-width: 25%;
   padding: 10px;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
+  height: max-content;
 }
 .column-inner {
-  background-color: linear-gradient(to right, #1697c1, #1697c1);
-  background-color: #e0e0e0; 
-  padding: 20px;
-  border-radius: 8px;
+  /* background-color: #e0e0e0;  */
+  padding: 5px;
   text-align: left;
-  height: 300px;
+  height: auto;
 }
 .column-inner img {
   width: 100%;
-  height: 150px;
-  border-radius: 8px;
+  height: 80%;
+  /* border-radius: 8px; */
   padding-bottom: 12px;
 }
 @media screen and (max-width: 768px) {
@@ -214,4 +213,34 @@ h1 {
     flex: 100%;
     max-width: 100%;
   }
+}
+
+/* products list */
+
+.product-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+.product-slider::-webkit-scrollbar {
+  display: none;
+}
+.product-card {
+  flex: 0 0 auto;
+  margin-right: 20px;
+  width: 150px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+.product-card img {
+  max-width: 100%;
+  height: auto;
+}
+.product-card .title {
+  margin: 10px 0;
+  font-weight: bold;
+}
+.product-card .price {
+  color: green;
 }

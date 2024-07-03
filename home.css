@@ -1,221 +1,225 @@
-body {
-    margin: 0;
-    line-height: normal;
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
+body{
+   font-family: Arial, Helvetica, sans-serif;
+   padding: 0px;
+}
+.counter {
+   /* background-color:#f5f5f5; */
+   padding: 20px 0;
+   border-radius: 5px;
+}
+
+.count-title {
+   font-size: 40px;
+   font-weight: 900;
+   margin-top: 10px;
+   margin-bottom: 0;
+   text-align: center;
+   color:#006aa3;
+}
+
+.count-text {
+   font-size: 13px;
+   font-weight: normal;
+   margin-top: 10px;
+   margin-bottom: 0;
+   text-align: center;
+}
+
+.fa-2x {
+   margin: 0 auto;
+   float: none;
+   display: table;
+   color: #4ad1e5;
+}
+
+.contaner{
+   padding: 0px;
+   margin: 0px;
+}
+/* about eapl */
+
+.about-us-section {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 20px;
+}
+.about-us-title {
+   font-size: 2em;
+   margin-bottom: 20px;
+}
+.about-us-content {
+   display: flex;
+   align-items: flex-start;
+   max-width: 1200px;
+   width: 100%;
+}
+.text-content {
+   flex: 1;
+   padding-right: 20px;
+}
+.text-content h2 {
+   font-size: 1.5em;
+   margin-bottom: 10px;
+}
+.text-content p {
+   margin-bottom: 10px;
+   line-height: 1.6;
+}
+.image-content {
+   flex: 1;
+}
+.image-content img {
+   width: 100%;
+   height: auto;
+   border-radius: 10px;
+}
+
+/* our solutions */
+.services-section {
+   text-align: center;
+   padding: 50px 20px;
+}
+
+.services-section h2 {
+   /* font-size: 24px; */
+   margin-bottom: 10px;
+}
+
+.services-section p {
+   font-size: 16px;
+   color: #666;
+   max-width: 600px;
+   margin: 0 auto 40px;
+}
+
+.services-container {
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+   flex-wrap: wrap;
+
+}
+
+.service-box {
+   /* background-color: #006aa3; */
+   /* color: #f9f9f9; */
+   /* border: 1px solid #e0e0e0; */
+   padding: 20px;
+   text-align: center;
+   width: 300px;
+   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+   background-color: #006aa3;
+   color: #f9f9f9;
+
+}
+
+.service-box .icon {
+   margin-bottom: 20px;
+}
+
+.service-box .icon img {
+   width: 50px;
+   height: 50px;
+}
+
+.service-box h3 {
+   font-size: 20px;
+   margin-bottom: 10px;
+}
+
+.service-box p {
+   font-size: 14px;
+   color: #ffffff;
+}
+
+
+/* why eapl */
+.features-section {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   /* padding: 40px 20px; */
+   /* background-color: #006aa3; */
+   /* border-radius: 15px; */
+}
+.feature-item {
+   /* border-radius: 10px; */
+   flex: 1 1 calc(50% - 40px);
+   max-width: calc(50% - 40px);
+   display: flex;
+   align-items: center;
+   background-color: #dddddd;
+   margin-bottom: 9px;
+   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+
+}
+.feature-icon {
+   font-size: 2em;
+   margin-right: 20px;
+   padding: 9px;
+   background-color:#006aa3;
+}
+.feature-content {
+   flex: 1;
+   padding: 9px;
+}
+.feature-content h3 {
+   margin: 0 0 10px;
+   font-size: 1.2em;
+}
+.feature-content p {
+   margin: 0;
+   line-height: 1.6;
+}
+
+
+
+/* global presence */
+
+   
+   .text-bg-section {
+      position: relative;
+      background-image: url('./images/map.avif');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      color: white;
+      text-align: left;
+      padding: 20px;
   }
-  
-
-/* ------------------------hero section starts------------------------ */
-    .hero-section h1{
-    /* font-size: 45px; */
-    /* font-weight: 900;  */
-    text-align: left;
-    } 
-
-.neweaplproduct h1 {
-    color: #001168; /* Change as needed */
-    text-align: left;
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    padding-left: 3rem;
-    }
-    @media (max-width: 768px) {
-    .hero-section h1  {
-    color: #fff;
-    /* font-size: 35px; */
-    }
-    }
-    /* ----------------------know more-------------------------------- */
-    section {
-    background: #fff; /* Assuming a white background */
-    color: #333; /* Dark text color for readability */
-    }
-    .know_more h3 {
-    font-size: 18px;
-    }
-    .btn-outline-secondary {
-    border-color: #ff6600;
-    background-color:#ff6600 ;
-    color: #ffffff; /* Example text color */
-    /* border-style: none; */
-    border-radius: 25px;
-    }
-    .btn-outline-secondary:hover {
-    border-color: #ff6600;
-    background-color: #ff6600; /* Example hover background color */
-    color: #fff; /* White text on hover */
-    }
-    /* -----------------------------newateapl--------------------------------- */
-    /* 001168 */
-    .newateapl h1 {
-    color: #001168;
-    text-align: left;
-    }
-    .newateapl h3{
-    color: #001168;
-    font-weight: 600;
-    text-align: left;
-    }
-    .newateapl p{
-    color: #001168;
-    font-weight: 400;
-    text-align: left;
-    margin-bottom: 0px;
-    }
-    .newateapl a{
-    color: #ff6600;
-    font-weight: 400;
-    text-decoration:none;
-    padding-left: 0;
-    padding-top: 0px;
-    }
-
-    .newateapl img{
-    background-color: #dbdad9;
-    padding: 30px;
-
-    }
- 
-    /* -------------------------------- */
-    .focus h1 {
-    color: #001168;
-    }
-    .segment-header h1{
-        padding-left: 0px;
-    }
-    .segment-list{
-        padding-left: 0px;
-    }
-    .segment-list li {
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    padding-top: 30px;
-    color: #ccc;
-    list-style: none;
-    font-size: 24px;
-    }
-    .segment-list li.active {
-    /* background-color: #001168; Bootstrap primary color for example */
-    color: #001168;
-    font-weight: bolder;
-    }
-    .segment-image {
-    padding-right: 0;
-    width:60%;       /* Ensures the div takes the full width of its container */
-    height: 300px;     /* Set a fixed height or make it responsive based on your design */
-    background-size: cover;    /* Covers the entire area of the div without stretching */
-    background-position: center; /* Centers the background image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    transition: background-image 0.3s ease-in-out; /* Smooth transition for background image change */
-    }
-    /* ------------feature-section-------------------------- */
-    .feature-section h1 {
-    color: #001168; /* Change as needed */
-    text-align: left;
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    }
-    .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-    }
-    .col-md-6 {
-    width: 50%;
-    padding-right: 15px;
-    padding-left: 15px;
-    box-sizing: border-box;
-    display: flex;
-    align-items: stretch; /* This will make sure all items stretch to the same height */
-    }
-    .feature-box{
-    /* margin: 10px; */
-    margin-bottom: 15px;
-    }
-    .feature-box h3 {
-    justify-content: center; /* Center the content vertically */
-    align-items: center; /* Center the content horizontally */
-    text-align: left;
-    padding-left: 20px;
-    font-weight: 600;
-    }
-    .feature-box p {
-    justify-content: center; /* Center the content vertically */
-    align-items: center; /* Center the content horizontally */
-    text-align: left;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-weight:100;
-    font-size: small;
-    }
-    .feature-icon {
-    font-size: 2em; /* Example icon size */
-    margin-bottom: 9px;
-    }
-    .feature-icon img {
-        font-size: 2em; /* Example icon size */
-        margin-bottom: 9px;
-        height: 60px;
-        }
-.feature-box{
-    background-color: #003366;
-    color: #fff;
-    }
-    .feature-box h3{
-    color: #fff;
-    text-align: left;
-    }
-
-    .feature-icon {
-    color: #fff;
-    text-align: left;
-    padding: 20px;}
-    /* ------------------------------------------- */
-    /* Default to a smaller size on small screens */
-    .custom-img-size {
-    width: 90px;
-    height: 90px;
-    background-color: rgba(201, 201, 201, 0.658);
-    padding: 45px;
-    }
-    /* On medium screens and up, increase the size */
-    @media (min-width: 768px) {
-    .custom-img-size {
-    width: 190px; /* Adjust to your preference */
-    height: 190px;
-    }
-    }
-    /* ------------------------------------------ */
-
-    /* ----------------brands lists------------------ */
-    .logo-section h1{
-    color: #001168;
-    text-align: center;
-    }
-    .logo-section img{
-        max-width: 85%;
-    }
-    .logo-section {
-    padding: 2rem 0;
-    background-color: #fff; /* Adjust background color as needed */
-    }
-    .logo {
-    height: 100px; /* Fixed height for all logos */
-    width: auto; /* Maintain aspect ratio */
-    object-fit: contain; /* Ensures the image is scaled correctly within the element bounds */
-    padding: 10px; /* Adds some space around the image */
-    margin: 0 auto 2rem; /* Centers the logo and adds space below */
-    display: block; /* Ensures that padding and margin are applied correctly */
-    background-color: #fff; /* Background color for the logo area */
-    border: 1px solid transparent; /* Adds a transparent border to maintain layout even if images have transparent backgrounds */
-    }
-    /* Adjusts the size of logos for smaller screens */
-    @media (max-width: 767px) {
-    .logo {
-    height: 60px; /* Smaller height for logos on smaller screens */
-    margin-bottom: 1rem; /* Less space below each logo */
-    }
-    }
-    
+  .text-bg-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #006aa3e3; /* Adjust opacity as needed */
+      z-index: 1;
+  }
+  .text-content-global-presence {
+      position: relative;
+      z-index: 2;
+      max-width: 600px;
+      background: #006aa3(0, 0, 180, 0.9);
+      padding: 20px;
+      border-radius: 10px;
+  }
+  .text-content-global-presence h1 {
+      margin: 0 0 20px;
+      font-size: 2.5em;
+  }
+  .text-content-global-presence p {
+      margin: 0;
+      font-size: 1.2em;
+  }
+  /* all brands */
+.all_brands{
+   /* padding-left: 18px;
+   padding-right: 12px; */
+}
