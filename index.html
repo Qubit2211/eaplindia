@@ -241,7 +241,93 @@ jQuery(function ($) {
           </div>
       </div>
   </div>
-      
+      <section class="container">
+         <div class="container py-3">
+            <h2>Our Products</h2>
+            <div class="d-flex justify-content-between align-items-center">
+               <button class="btn" onclick="scrollSlider(-300)">&#10094;</button>
+               <div class="product-slider" id="productSlider">
+                  <div class="product-card">
+                     <img src="images/digital-timer.png" alt="Product 1">
+                     <div class="title">Sample Product Title</div>
+                     <div class="price">20.00</div>
+                  </div>
+                  <div class="product-card">
+                     <img src="images/digital-timer.png" alt="Product 1">
+                     <div class="title">Sample Product Title</div>
+                     <div class="price">20.00</div>
+                  </div>
+                  <div class="product-card">
+                     <img src="images/digital-timer.png" alt="Product 1">
+                     <div class="title">Sample Product Title</div>
+                     <div class="price">20.00</div>
+                  </div>
+                  <div class="product-card">
+                     <img src="images/digital-timer.png" alt="Product 1">
+                     <div class="title">Sample Product Title</div>
+                     <div class="price">20.00</div>
+                  </div>
+                  <div class="product-card">
+                     <img src="images/digital-timer.png" alt="Product 1">
+                     <div class="title">Sample Product Title</div>
+                     <div class="price">20.00</div>
+                  </div>
+                  <div class="product-card">
+                     <img src="images/digital-timer.png" alt="Product 1">
+                     <div class="title">Sample Product Title</div>
+                     <div class="price">20.00</div>
+                  </div>
+                  <div class="product-card">
+                     <img src="images/digital-timer.png" alt="Product 1">
+                     <div class="title">Sample Product Title</div>
+                     <div class="price">20.00</div>
+                  </div>
+                  <div class="product-card">
+                     <img src="images/digital-timer.png" alt="Product 1">
+                     <div class="title">Sample Product Title</div>
+                     <div class="price">20.00</div>
+                  </div>
+                  <div class="product-card">
+                     <img src="images/digital-timer.png" alt="Product 1">
+                     <div class="title">Sample Product Title</div>
+                     <div class="price">20.00</div>
+                  </div>
+                  <div class="product-card">
+                     <img src="images/digital-timer.png" alt="Product 1">
+                     <div class="title">Sample Product Title</div>
+                     <div class="price">20.00</div>
+                  </div>
+                  <div class="product-card">
+                     <img src="images/digital-timer.png" alt="Product 1">
+                     <div class="title">Sample Product Title</div>
+                     <div class="price">20.00</div>
+                  </div>
+                  <div class="product-card">
+                     <img src="images/digital-timer.png" alt="Product 1">
+                     <div class="title">Sample Product Title</div>
+                     <div class="price">20.00</div>
+                  </div>
+                  <div class="product-card">
+                     <img src="images/digital-timer.png" alt="Product 1">
+                     <div class="title">Sample Product Title</div>
+                     <div class="price">20.00</div>
+                  </div>
+                  <div class="product-card">
+                     <img src="images/digital-timer.png" alt="Product 1">
+                     <div class="title">Sample Product Title</div>
+                     <div class="price">20.00</div>
+                  </div>
+                  <div class="product-card">
+                     <img src="images/digital-timer.png" alt="Product 1">
+                     <div class="title">Sample Product Title</div>
+                     <div class="price">20.00</div>
+                  </div>
+                  <!-- Add more product cards as needed -->
+               </div>
+               <button class="btn" onclick="scrollSlider(300)">&#10095;</button>
+            </div>
+         </div>
+      </section>
         
          <!-- ---------------------------WHY CHOOSE EAPL---------------------------------------- -->
          <section class="container text-left">
@@ -326,6 +412,17 @@ jQuery(function ($) {
             </div>
          </section> -->
    </body>
+   <script>
+      function scrollSlider(amount) {
+          document.getElementById('productSlider').scrollBy({
+              left: amount,
+              behavior: 'smooth'
+          });
+      }
+    </script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    
    </main>
    <my-footer></my-footer>
    <!-- Bootstrap JS and dependencies -->
